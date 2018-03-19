@@ -1,0 +1,15 @@
+body {
+  background-color: #DB2017;
+}
+
+.header {
+  background-color: #DB2017;
+  text-align: center;
+
+}
+
+.header_copy {
+  color: #DB2017;
+  background-color: #FFFF00;
+  text-align: center;
+}
