@@ -4,12 +4,38 @@ body {
 
 .header {
   background-color: #DB2017;
+  color: #FFFF00;
+  font-size: 24px;
+  font-family: 'Rock Salt', cursive;
   text-align: center;
-
 }
 
 .header_copy {
-  color: #DB2017;
   background-color: #FFFF00;
+  color: #DB2017;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
+}
+
+@media only screen and (min-width: 767px) {
+  .header {
+    font-size: 36px;
+  }
+
+  .header_copy {
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (min-width: 1023px) {
+  .header {
+    font-size: 48px;
+  }
+
+  .header_copy {
+    font-size: 20px;
+  }
+
 }
