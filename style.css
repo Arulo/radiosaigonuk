@@ -1,21 +1,64 @@
-body {
+* {
+  margin: 0;
+}
+
+/* Color Scheme:
+green: 38695E
+lime green: C8E479
+dark blue: 1B2535
+ */
+
+html, body {
   background-color: #DB2017;
+  height: 100%;
 }
 
 .header {
   background-color: #DB2017;
-  color: #FFFF00;
+  color: #FDE272;
   font-size: 24px;
   font-family: 'Rock Salt', cursive;
   text-align: center;
+  height: 180px;
 }
 
 .header_copy {
-  background-color: #FFFF00;
+  background-color: #FDE272;
   color: #DB2017;
   font-size: 12px;
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
+}
+
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -40px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 40px;
+}
+.site-footer {
+  background-color: #1E2738;
+  color: #FDE272;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  margin-top:60px;
+  padding-top: 22px;
+}
+.social-fb {
+height: 32px;
+width: 32px;
+}
+.social-tw {
+height: 32px;
+width: 32px;
 }
 
 @media only screen and (min-width: 767px) {
