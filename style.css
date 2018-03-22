@@ -42,11 +42,12 @@ html, body {
 }
 .site-footer, .page-wrap:after {
   height: 40px;
+  font-size: 12px;
 }
 .site-footer {
   background-color: #1E2738;
   color: #FDE272;
-  font-size: 12px;
+
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   margin-top:60px;
@@ -70,6 +71,10 @@ width: 32px;
     font-size: 16px;
   }
 
+  .site-footer {
+    font-size: 16px;
+  }
+
 }
 
 @media only screen and (min-width: 1023px) {
@@ -79,6 +84,10 @@ width: 32px;
 
   .header_copy {
     font-size: 20px;
+  }
+
+  .site-footer {
+    font-size: 18px;
   }
 
 }
