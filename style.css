@@ -7,7 +7,6 @@ green: 38695E
 lime green: C8E479
 dark blue: 1B2535
  */
-
 html, body {
   background-color: #DB2017;
   height: 100%;
@@ -30,37 +29,55 @@ html, body {
   text-align: center;
 }
 
+.footer-wrapper {
+  display: block;
+  padding: 8px;
 }
+
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -40px;
+  margin-bottom: -160px;
 }
+
 .page-wrap:after {
   content: "";
   display: block;
 }
+
 .site-footer, .page-wrap:after {
-  height: 40px;
-  font-size: 12px;
+  height: 160px;
 }
+
 .site-footer {
   background-color: #1E2738;
   color: #FDE272;
-
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   margin-top:60px;
   padding-top: 22px;
 }
-.social-fb {
-height: 32px;
-width: 32px;
+
+.footer-copy {
+  float: left;
+  margin-left:32px;
+  margin-right:32px;
+  font-size: 12px;
 }
-.social-tw {
-height: 32px;
-width: 32px;
+
+
+.social-icon {
+  height: 20px;
+  width: 20px;
+  float: right;
+  margin-right:32px;
 }
+
+/* Expandable Items List */
+
+
+
+
 
 @media only screen and (min-width: 767px) {
   .header {
@@ -68,10 +85,19 @@ width: 32px;
   }
 
   .header_copy {
-    font-size: 16px;
+    font-size: 20px;
   }
 
-  .site-footer {
+  .social-icon {
+    height: 32px;
+    width: 32px;
+    float: right;
+    margin-right:32px;
+  }
+
+  .footer-copy {
+    float: left;
+    margin-left:32px;
     font-size: 16px;
   }
 
@@ -86,8 +112,19 @@ width: 32px;
     font-size: 20px;
   }
 
-  .site-footer {
-    font-size: 18px;
+  .social-icon {
+    height: 32px;
+    width: 32px;
+    float: right;
+    margin-right:32px;
   }
+
+  .footer-copy {
+    float: left;
+    margin-left:32px;
+    font-size: 16px;
+  }
+
+
 
 }
