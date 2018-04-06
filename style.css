@@ -13,12 +13,14 @@ html, body {
 }
 
 .header {
-  background-color: #DB2017;
+  background-color: #1E2738;
   color: #FDE272;
-  font-size: 24px;
+  font-size: 36px;
   font-family: 'Rock Salt', cursive;
   text-align: center;
-  height: 180px;
+  text-shadow: 5px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .header_copy {
@@ -27,6 +29,8 @@ html, body {
   font-size: 12px;
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
+  padding-top: 2%;
+  padding-bottom:2%;
 }
 
 .footer-wrapper {
@@ -75,14 +79,73 @@ html, body {
 
 /* Expandable Items List */
 
+.wrapper{
+  margin: auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  width: 96%;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+label{
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #DB2017;
+  border-bottom: none;
+  background: #DB2017;
+  color: #FDE272;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+
+label:hover{
+  background: #FDE272;
+  color: #DB2017;
+}
+
+label.last{
+  border-bottom: 1px solid #DB2017;
+}
+
+ul ul li{
+  padding: 10px;
+  background: #DB2017;
+}
+
+
+input[type="checkbox"]{
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="checkbox"] ~ ul{
+  height: 0;
+  transform: scaleY(0);
+}
+
+input[type="checkbox"]:checked ~ ul{
+  height: 100%;
+  transform-origin: top;
+  transition: transform .2s ease-out;
+  transform: scaleY(1);
+}
+
+input[type="checkbox"]:checked + label{
+  background: #1E2738;
+  border-bottom: 1px solid #DB2017;
+}
 
 
 
 
 @media only screen and (min-width: 767px) {
-  .header {
-    font-size: 36px;
-  }
 
   .header_copy {
     font-size: 20px;
